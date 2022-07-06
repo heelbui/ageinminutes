@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         tvSelectedDate = findViewById(R.id.tvSelectedDate)
         tvMinuteCalc = findViewById(R.id.tvMinutesCalc)
 
+        tvSelectedDate?.text = ""
+        tvMinuteCalc?.text = ""
+
         val btnSelectDate = findViewById<Button>(R.id.btnSelectDate)
         btnSelectDate.setOnClickListener {
             clickOnDatePicker()
